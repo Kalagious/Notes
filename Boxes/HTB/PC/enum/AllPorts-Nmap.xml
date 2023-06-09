@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.93 scan initiated Fri Jun  9 17:06:20 2023 as: nmap -p- -sC -sV -oA AllPorts-Nmap -&#45;open -&#45;min-rate 5000 -Pn 10.10.11.214 -->
-<nmaprun scanner="nmap" args="nmap -p- -sC -sV -oA AllPorts-Nmap -&#45;open -&#45;min-rate 5000 -Pn 10.10.11.214" start="1686344780" startstr="Fri Jun  9 17:06:20 2023" version="7.93" xmloutputversion="1.05">
+<!-- Nmap 7.93 scan initiated Fri Jun  9 17:39:52 2023 as: nmap -p- -oA AllPorts-Nmap -&#45;min-rate 222 -Pn 10.10.11.214 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA AllPorts-Nmap -&#45;min-rate 222 -Pn 10.10.11.214" start="1686346792" startstr="Fri Jun  9 17:39:52 2023" version="7.93" xmloutputversion="1.05">
 <scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="0"/>
 <debugging level="0"/>
-<taskprogress task="Connect Scan" time="1686344860" percent="24.74" remaining="223" etc="1686345082"/>
-<taskprogress task="Connect Scan" time="1686344918" percent="44.82" remaining="162" etc="1686345079"/>
-<taskprogress task="Connect Scan" time="1686345096" percent="98.93" remaining="4" etc="1686345099"/>
-<host starttime="1686344787" endtime="1686345165"><status state="up" reason="user-set" reason_ttl="0"/>
+<taskprogress task="Connect Scan" time="1686346800" percent="0.24"/>
+<taskprogress task="Connect Scan" time="1686346801" percent="0.35"/>
+<taskprogress task="Connect Scan" time="1686346801" percent="0.43"/>
+<taskprogress task="Connect Scan" time="1686346802" percent="0.47"/>
+<taskprogress task="Connect Scan" time="1686346802" percent="0.49"/>
+<taskprogress task="Connect Scan" time="1686346836" percent="6.33" remaining="548" etc="1686347384"/>
+<taskprogress task="Connect Scan" time="1686346926" percent="21.49" remaining="464" etc="1686347390"/>
+<taskprogress task="Connect Scan" time="1686347065" percent="45.02" remaining="325" etc="1686347390"/>
+<taskprogress task="Connect Scan" time="1686347336" percent="90.96" remaining="54" etc="1686347389"/>
+<host starttime="1686346799" endtime="1686347390"><status state="up" reason="user-set" reason_ttl="0"/>
 <address addr="10.10.11.214" addrtype="ipv4"/>
 <hostnames>
 </hostnames>
-<ports><extraports state="filtered" count="65534">
-<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-21,23-65535"/>
+<ports><extraports state="filtered" count="65535">
+<extrareasons reason="no-response" count="65535" proto="tcp" ports="1-65535"/>
 </extraports>
-<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
 </ports>
-<times srtt="1201831" rttvar="188060" to="1954071"/>
 </host>
-<runstats><finished time="1686345165" timestr="Fri Jun  9 17:12:45 2023" summary="Nmap done at Fri Jun  9 17:12:45 2023; 1 IP address (1 host up) scanned in 384.72 seconds" elapsed="384.72" exit="success"/><hosts up="1" down="0" total="1"/>
+<runstats><finished time="1686347390" timestr="Fri Jun  9 17:49:50 2023" summary="Nmap done at Fri Jun  9 17:49:50 2023; 1 IP address (1 host up) scanned in 598.14 seconds" elapsed="598.14" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>

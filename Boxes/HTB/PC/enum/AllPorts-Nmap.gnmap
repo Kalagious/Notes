@@ -1,4 +1,4 @@
-# Nmap 7.93 scan initiated Fri Jun  9 17:06:20 2023 as: nmap -p- -sC -sV -oA AllPorts-Nmap --open --min-rate 5000 -Pn 10.10.11.214
+# Nmap 7.93 scan initiated Fri Jun  9 17:39:52 2023 as: nmap -p- -oA AllPorts-Nmap --min-rate 222 -Pn 10.10.11.214
 Host: 10.10.11.214 ()	Status: Up
-Host: 10.10.11.214 ()	Ports: 22/open/tcp//tcpwrapped///	Ignored State: filtered (65534)
-# Nmap done at Fri Jun  9 17:12:45 2023 -- 1 IP address (1 host up) scanned in 384.72 seconds
+Host: 10.10.11.214 ()	Ports: 	Ignored State: filtered (65535)
+# Nmap done at Fri Jun  9 17:49:50 2023 -- 1 IP address (1 host up) scanned in 598.14 seconds

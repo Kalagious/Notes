@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Boxes/Report-Template.md",
+                "file": "Boxes/HTB/PC-Report.md",
                 "mode": "preview",
                 "source": true
               }
@@ -164,7 +164,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "099b12b6a11378d2",
+  "active": "aa84fbe712fefae5",
   "lastOpenFiles": [
     "Boxes/Report-Template.md",
     "Boxes/HTB/PC-Report.md",
