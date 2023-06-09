@@ -1,0 +1,61 @@
+print ('''\033[34;1m################################### \033[31;1mPrivesc Linux\033[0m \033[34;1m###################################\033[0m
+
+Check Sudo
+	\033[33;1m$ sudo -l\033[0m
+
+Check Home Dirs
+
+Check World Writable Dirs
+	/tmp/
+	/var/tmp/
+	/dev/shm/
+	/opt/
+
+Check Configs for Creds
+	webserver
+	sql dbs
+
+Check Running Processes
+	\033[33;1m$ ps aux \033[0m
+	\033[33;1m$ ps aux | grep -i 'root' --color=auto\033[0m
+		*Kernel based processes have square brackets around them, look at other stuff
+		*Check for cron
+
+If Cron is running check crontab
+	\033[33;1m$ cat /etc/crontab\033[0m
+
+Check /etc for files that are not   root root   or   root shadow (Anything not default and is potentially readable)
+
+Check network for local ports (loopback services 127.0.0.1)
+	\033[33;1m$ netstat -antup \033[0m
+	\033[33;1m$ ss -tunlp \033[0m
+	Notable ports:
+	3306 - MySQL
+
+Check /root for non normal files
+
+Look For SUIDs
+	\033[33;1m$ find / -perm -u=s -type f 2>/dev/null\033[0m
+
+Look for GUIDs
+	\033[33;1m$ find / -perm -g=s -type f 2>/dev/null\033[0m
+
+Check for extended capabilites
+	\033[33;1m$ getcap -r / 2>/dev/null\033[0m
+
+
+
+
+
+
+\033[34;1m------------------ \033[31;1mTools\033[0m \033[34;1m------------------\033[0m
+
+PSpy - Watches events on the system and can track exectuions or writes, good background recon
+	''')
+
+
+
+
+
+
+

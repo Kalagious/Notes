@@ -1,0 +1,25 @@
+print ('''\033[34;1m################################### \033[31;1mUpgrading TTY\033[0m \033[34;1m###################################\033[0m
+1 - Establish a TTY:
+	Method 1 - Python:
+	\033[33;1m$ python3 -c 'import pty; pty.spawn("/bin/bash")'\033[0m
+	Method 2 - Script:
+	\033[33;1m$ script -qc /bin/bash /dev/null\033[0m
+
+2 - Set Local Shell Settings:
+	Ctrl Z
+	\033[33;1m$ stty raw -echo\033[0m	
+	\033[33;1m$ fg\033[0m
+
+3 - Set Remote Shell Settings:
+	\033[33;1m$ reset\033[0m
+
+4 - Check Extras
+	Look to see if $PATH is correctly exported:
+	\033[33;1m$ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin/bin:/usr/games:/tmp\033[0m
+	Check TTY Settings:
+	\033[33;1m$ stty -a\033[0m
+	Specify Rows and Cols:
+	\033[33;1m$ stty rows 93 columns 316\033[0m
+	Set Colors and Clear:
+	\033[33;1m$ export TERM=xterm-256color\033[0m
+''')

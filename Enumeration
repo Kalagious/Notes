@@ -1,0 +1,9 @@
+print ('''\033[34;1m################################### \033[31;1mEnumeration\033[0m \033[34;1m###################################\033[0m
+
+Nmap
+	\033[33;1m$ nmap -p- -sC -sV $IP -oA AllPorts-Nmap --open --min-rate 5000 \033[0m
+	\033[33;1m$ nmap -sC -sV $IP -oA Basic-Nmap\033[0m
+	\033[33;1m$ nmap $IP -sU -sC -sV -oA UDP-Nmap --open --min-rate 5000\033[0m
+
+
+''')

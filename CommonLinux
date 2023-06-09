@@ -1,0 +1,13 @@
+	print ('''\033[34;1m################################### \033[31;1mCommon Linux\033[0m \033[34;1m###################################\033[0m
+
+List Installed Packages(Versions)
+	\033[33;1m$ dpkg -l\033[0m
+
+Pipe Errors to /dev/null
+	\033[33;1m2>/dev/null\033[0m
+
+Looking for Files
+	\033[33;1m$ find /path/to/search/dir -name "filename"\033[0m
+
+
+''')
